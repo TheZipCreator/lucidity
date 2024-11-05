@@ -4,3 +4,18 @@ core.register_node("lucidity:grass", {
 	groups = {crumbly=2},
 	is_ground_content = true
 })
+
+core.register_node("lucidity:dirt", {
+	description = "Dirt",
+	tiles = {"lucidity_dirt.png"},
+	groups = {crumbly=2},
+	is_ground_content = true
+})
+
+core.register_node("lucidity:stone", {
+	description = "Stone",
+	tiles = {"lucidity_stone.png"},
+	groups = {cracky=2},
+	is_ground_content = true
+})
+
