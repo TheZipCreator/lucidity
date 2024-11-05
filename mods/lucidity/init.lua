@@ -1,7 +1,8 @@
 core.register_node("lucidity:grass", {
 	description = "Grass",
 	tiles = {"lucidity_grass.png"},
-	groups = {"crumbly"}
+	groups = {"crumbly"},
+	is_ground_content = true
 })
 
 -- gets the path

@@ -16,7 +16,9 @@ minetest.register_on_generated(function(minp, maxp, seed)
 		for y = minp.y, maxp.y do
 			for z = minp.z, maxp.z do
 				local vi = area:index(x, y, z)
-				data[vi] = 
+				if y < 0 then
+					data[vi] = nodes.grass
+				end
 			end
 		end
 	end
