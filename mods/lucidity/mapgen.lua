@@ -12,6 +12,7 @@ local perlin = PerlinNoise{
 
 local noise_multiplier = 100
 local water_level = 0
+local shore_size = 2
 
 core.register_on_generated(function(vm, minp, maxp, seed)
 	local nodes = {
@@ -35,13 +36,15 @@ core.register_on_generated(function(vm, minp, maxp, seed)
 						data[vi] = nodes.water
 					end
 				elseif y == noiseval then
-					data[vi] = nodes.grass
+					if y < water_level+shore_size then
+						data[vi] = nodes.sand
+					else
+						data[vi] = nodes.grass
+					end
 				elseif y < noiseval and y > noiseval-3 then
 					data[vi] = nodes.dirt
 				elseif y <= noiseval-3 then
 					data[vi] = nodes.stone
-				elseif y <= noiseval-2 then
-					data[vi] = nodes.sand
 				end
 			end
 		end
