@@ -19,3 +19,25 @@ core.register_node("lucidity:stone", {
 	is_ground_content = true
 })
 
+core.register_node("Lucidity:wood", {
+	description = "wood",
+	tiles = {"lucidity_wood.png", "lucidity_wood.png", "lucidity_wood_side.png","lucidity_wood_side,png", "lucidity_wood_side.png","lucidity_wood_side,png" },
+	groups = {choppy = 2},
+})
+
+core.register_node("lucidity:leaves", {
+	description = "Leaves",
+	tiles = {"lucidity_leaves.png"},
+	groups = {crumbly = 2 },
+})
+core.register_node("lucidity:sand", {
+	description = "sand",
+	tiles = {"lucidity_sand.png"},
+	groups = {crumbly = 2 },
+	is_ground_content = true
+})
+core.register_node("lucidity:iron_ore", {
+	description = "Iron ore",
+	tiles = {"lucidity_iron_ore.png"},
+	groups = {cracky = 2 },
+})
