@@ -3,3 +3,4 @@ for lucidity have the player find things that are not in the game yet and cant b
 have a patch notes section in the menu that shows upcoming features and some of the features that are not supposed to be in the game can be found half finished in the game example finding food from mobs that arnt in the game. add a patch note the says fixed player spawning in ground to add to the unreliableness of the patch notes. also have patch notes say farming has been added but farming is not possible
 things to add that are not finished on purpose for this: tires, block of redstone, iron doors but no way to open them yet, book shelves (no books and when broken drop texture errors), trough, 
 top left says the version number: unreliable
+add blocks that are nammed after the theme of the game also add blocks in the sky that randomly appear one of the blocks that can appear will have almost the same color as the sky and be hard to spot
