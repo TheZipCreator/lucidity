@@ -19,7 +19,7 @@ core.register_node("lucidity:stone", {
 	is_ground_content = true
 })
 
-core.register_node("Lucidity:wood", {
+core.register_node("lucidity:wood", {
 	description = "wood",
 	tiles = {"lucidity_wood.png", "lucidity_wood.png", "lucidity_wood_side.png","lucidity_wood_side,png", "lucidity_wood_side.png","lucidity_wood_side,png" },
 	groups = {choppy = 2},
@@ -50,4 +50,33 @@ core.register_node("lucidity:lucigin",{
 	description = "lucigin",
 	tiles = {"lucidity_lucigin.png"},
 	groups = {craky = 4},
+})
+core.register_node("lucidity:water", {
+	description = "Water",
+	drawtype = "liquid",
+	waving = 3,
+	walkable = false,
+	pointable = false,
+	liquidtype = "source",
+	sunlight_propagates = true,
+	liquid_alternative_source = "lucidity:water",
+	liquid_alternative_flowing = "lucidity:flowing_water",
+	liquid_viscosity = 2,
+	liquid_move_physics = true,
+	tiles = {"lucidity_water.png"},
+})
+
+core.register_node("lucidity:flowing_water", {
+	description = "Flowing Water",
+	drawtype = "liquid",
+	waving = 3,
+	walkable = false,
+	pointable = false,
+	liquidtype = "flowing",
+	sunlight_propagates = true,
+	liquid_alternative_source = "lucidity:water",
+	liquid_alternative_flowing = "lucidity:flowing_water",
+	liquid_viscosity = 2,
+	liquid_move_physics = true,
+	tiles = {"lucidity_water.png"},
 })
