@@ -19,7 +19,6 @@ core.register_on_generated(function(vm, minp, maxp, seed)
 		dirt = core.get_content_id("lucidity:dirt"),
 		stone = core.get_content_id("lucidity:stone"),
 		water = core.get_content_id("lucidity:water"),
-		sand = core.get_conetent_id("lucidity:sand"),
 	}
 	local data = {}
 	vm:get_data(data)
@@ -40,8 +39,6 @@ core.register_on_generated(function(vm, minp, maxp, seed)
 					data[vi] = nodes.dirt
 				elseif y <= noiseval-3 then
 					data[vi] = nodes.stone
-				elseif x <= noiseval +1000 then
-					data[vi] = nodes.sand
 				end
 			end
 		end
