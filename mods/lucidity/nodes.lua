@@ -19,3 +19,32 @@ core.register_node("lucidity:stone", {
 	is_ground_content = true
 })
 
+core.register_node("lucidity:water", {
+	description = "Water",
+	drawtype = "liquid",
+	waving = 3,
+	walkable = false,
+	pointable = false,
+	liquidtype = "source",
+	sunlight_propagates = true,
+	liquid_alternative_source = "lucidity:water",
+	liquid_alternative_flowing = "lucidity:flowing_water",
+	liquid_viscosity = 2,
+	liquid_move_physics = true,
+	tiles = {"lucidity_water.png"},
+})
+
+core.register_node("lucidity:flowing_water", {
+	description = "Flowing Water",
+	drawtype = "liquid",
+	waving = 3,
+	walkable = false,
+	pointable = false,
+	liquidtype = "flowing",
+	sunlight_propagates = true,
+	liquid_alternative_source = "lucidity:water",
+	liquid_alternative_flowing = "lucidity:flowing_water",
+	liquid_viscosity = 2,
+	liquid_move_physics = true,
+	tiles = {"lucidity_water.png"},
+})
