@@ -21,7 +21,7 @@ core.register_node("lucidity:stone", {
 
 core.register_node("lucidity:wood", {
 	description = "wood",
-	tiles = {"lucidity_wood.png", "lucidity_wood.png", "lucidity_wood_side.png","lucidity_wood_side,png", "lucidity_wood_side.png","lucidity_wood_side,png" },
+	tiles = {"lucidity_wood.png", "lucidity_wood.png", "lucidity_wood_side.png","lucidity_wood_side.png", "lucidity_wood_side.png","lucidity_wood_side.png" },
 	groups = {choppy = 2},
 })
 

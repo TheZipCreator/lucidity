@@ -40,7 +40,7 @@ core.register_on_generated(function(vm, minp, maxp, seed)
 					data[vi] = nodes.dirt
 				elseif y <= noiseval-3 then
 					data[vi] = nodes.stone
-				elseif x <= noiseval +1000 then
+				elseif x <= noiseval+3 then
 					data[vi] = nodes.sand
 				end
 			end
