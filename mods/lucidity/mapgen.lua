@@ -33,6 +33,9 @@ core.register_on_generated(function(vm, minp, maxp, seed)
 				if y > noiseval then
 					if y < water_level then
 						data[vi] = nodes.water
+						if y == noiseval and x == math.random() then
+							data[vi] = nodes.sand
+						end
 					end
 				elseif y == noiseval then
 					data[vi] = nodes.grass
@@ -40,8 +43,6 @@ core.register_on_generated(function(vm, minp, maxp, seed)
 					data[vi] = nodes.dirt
 				elseif y <= noiseval-3 then
 					data[vi] = nodes.stone
-				elseif y <= noiseval-2 then
-					data[vi] = nodes.sand
 				end
 			end
 		end
