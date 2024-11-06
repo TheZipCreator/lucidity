@@ -41,3 +41,13 @@ core.register_node("lucidity:iron_ore", {
 	tiles = {"lucidity_iron_ore.png"},
 	groups = {cracky = 2 },
 })
+core.register_node("lucidity:diamond_ore",{
+	description = "diamond ore",
+	tiles = {"lucidity_diamond_ore.png"},
+	groups = {cracky = 3},
+})
+core.register_node("lucidity:lucigin",{
+	description = "lucigin",
+	tiles = {"lucidity_lucigin.png"},
+	groups = {craky = 4},
+})
