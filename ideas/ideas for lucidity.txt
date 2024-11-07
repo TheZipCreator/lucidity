@@ -4,3 +4,4 @@ have a patch notes section in the menu that shows upcoming features and some of 
 things to add that are not finished on purpose for this: tires, block of redstone, iron doors but no way to open them yet, book shelves (no books and when broken drop texture errors), trough, 
 top left says the version number: unreliable
 add blocks that are nammed after the theme of the game also add blocks in the sky that randomly appear one of the blocks that can appear will have almost the same color as the sky and be hard to spot
+wakestone could be what the player character is trying to work twords it can be one of the "glitches" of the world and if we have a few more glitch blocks then they can make something with them still dont know what it will do but its a goal to work twords for the character have a couple ideas to run by the other creator and we will see what sticks

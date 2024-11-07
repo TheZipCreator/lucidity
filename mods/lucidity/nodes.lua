@@ -82,3 +82,9 @@ core.register_node("lucidity:flowing_water", {
 	liquid_move_physics = true,
 	tiles = {"lucidity_water.png"},
 })
+
+core.register_node("lucidity:wakestone", {
+	description = "wakestone",
+	tiles = {"lucidity_wakestone.png"},
+	groups = {cracky = 4},
+})
