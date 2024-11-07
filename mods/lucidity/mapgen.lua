@@ -12,7 +12,7 @@ local perlin = PerlinNoise{
 
 local noise_multiplier = 100
 local water_level = 0
-local shore_size = 2
+local shore_size = 1
 
 core.register_on_generated(function(vm, minp, maxp, seed)
 	local nodes = {
