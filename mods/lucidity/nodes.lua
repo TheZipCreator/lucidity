@@ -2,14 +2,23 @@ core.register_node("lucidity:grass", {
 	description = "Grass",
 	tiles = {"lucidity_grass.png", "lucidity_dirt.png", "lucidity_grass_side.png", "lucidity_grass_side.png", "lucidity_grass_side.png", "lucidity_grass_side.png"},
 	groups = {crumbly=2},
-	is_ground_content = true
+	is_ground_content = true,
+	drop = "lucidity:dirt",
+	sounds = {
+		dig = "lucidity_dirt_dig",
+		dig = "lucidity_dirt_dug"
+	}
 })
 
 core.register_node("lucidity:dirt", {
 	description = "Dirt",
 	tiles = {"lucidity_dirt.png"},
 	groups = {crumbly=2},
-	is_ground_content = true
+	is_ground_content = true,
+	sounds = {
+		dig = "lucidity_dirt_dig",
+		dig = "lucidity_dirt_dug"
+	}
 })
 
 core.register_node("lucidity:stone", {
@@ -20,18 +29,25 @@ core.register_node("lucidity:stone", {
 })
 
 core.register_node("lucidity:wood", {
-	description = "wood",
+	description = "Wood",
 	tiles = {"lucidity_wood.png", "lucidity_wood.png", "lucidity_wood_side.png","lucidity_wood_side.png", "lucidity_wood_side.png","lucidity_wood_side.png" },
-	groups = {choppy = 2},
+	groups = {choppy = 1},
+	sounds = {
+		dig = "lucidity_wood_dig",
+		dig = "lucidity_wood_dug"
+	}
 })
 
 core.register_node("lucidity:leaves", {
+	drawtype = "allfaces_optional",
 	description = "Leaves",
 	tiles = {"lucidity_leaves.png"},
-	groups = {crumbly = 2 },
+	groups = {oddly_breakable_by_hand = 1},
+	waving = 2, 
+	use_texture_alpha = "clip"
 })
 core.register_node("lucidity:sand", {
-	description = "sand",
+	description = "Sand",
 	tiles = {"lucidity_sand.png"},
 	groups = {crumbly = 2 },
 	is_ground_content = true
@@ -42,12 +58,12 @@ core.register_node("lucidity:iron_ore", {
 	groups = {cracky = 2 },
 })
 core.register_node("lucidity:diamond_ore",{
-	description = "diamond ore",
+	description = "Diamond ore",
 	tiles = {"lucidity_diamond_ore.png"},
 	groups = {cracky = 3},
 })
 core.register_node("lucidity:lucigin",{
-	description = "lucigin",
+	description = "Lucigin",
 	tiles = {"lucidity_lucigin.png"},
 	groups = {craky = 4},
 })
@@ -64,6 +80,7 @@ core.register_node("lucidity:water", {
 	liquid_alternative_flowing = "lucidity:flowing_water",
 	liquid_viscosity = 2,
 	liquid_move_physics = true,
+	waving = 3,
 	tiles = {"lucidity_water.png"},
 })
 
@@ -80,5 +97,6 @@ core.register_node("lucidity:flowing_water", {
 	liquid_alternative_flowing = "lucidity:flowing_water",
 	liquid_viscosity = 2,
 	liquid_move_physics = true,
+	waving = 3,
 	tiles = {"lucidity_water.png"},
 })
