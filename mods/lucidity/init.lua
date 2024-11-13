@@ -8,6 +8,7 @@ core.set_mapgen_setting("mg_flags", "nolight", true)
 core.register_mapgen_script(path("mapgen.lua"))
 dofile(path("nodes.lua"))
 dofile(path("schematics.lua"))
+dofile(path("hud.lua"))
 
 local digtimes = dofile(path("digtimes.lua"));
 
