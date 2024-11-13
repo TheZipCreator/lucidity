@@ -53,14 +53,9 @@ core.register_node("lucidity:sand", {
 	is_ground_content = true
 })
 core.register_node("lucidity:iron_ore", {
-	description = "Iron ore",
+	description = "Iron Ore",
 	tiles = {"lucidity_iron_ore.png"},
 	groups = {cracky = 2 },
-})
-core.register_node("lucidity:diamond_ore",{
-	description = "Diamond ore",
-	tiles = {"lucidity_diamond_ore.png"},
-	groups = {cracky = 3},
 })
 core.register_node("lucidity:lucigin",{
 	description = "Lucigin",
@@ -102,7 +97,7 @@ core.register_node("lucidity:flowing_water", {
 })
 
 core.register_node("lucidity:wakestone", {
-	description = "wakestone",
+	description = "Wakestone",
 	tiles = {"lucidity_wakestone.png"},
 	groups = {cracky = 4},
 })
