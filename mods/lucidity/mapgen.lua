@@ -1,4 +1,9 @@
+-- gets the path
+function path(filename)
+	return minetest.get_modpath("lucidity") .. "/" .. filename
+end
 
+local schematics = dofile(path("schematics.lua"))
 
 local perlin = PerlinNoise{
 	offset = 0,
@@ -26,6 +31,8 @@ core.register_on_generated(function(vm, minp, maxp, seed)
 	vm:get_data(data)
 	local emin, emax = vm:get_emerged_area()
 	local area = VoxelArea(emin, emax)
+	local rng = PcgRandom(seed)
+	local trees = {}
 	for x = minp.x, maxp.x do
 		for z = minp.z, maxp.z do
 			local noiseval = math.floor(noise_multiplier*perlin:get_2d({x = x, y = z}))
@@ -43,6 +50,9 @@ core.register_on_generated(function(vm, minp, maxp, seed)
 						data[vi] = nodes.sand
 					else
 						data[vi] = nodes.grass
+						if rng:next(0, 100) < 2 then
+							table.insert(trees, {x = x, y = y+1, z = z})
+						end
 					end
 				elseif y < noiseval and y > noiseval-3 then
 					data[vi] = nodes.dirt
@@ -53,6 +63,10 @@ core.register_on_generated(function(vm, minp, maxp, seed)
 		end
 	end
 	vm:set_data(data)
+	-- spawn trees
+	for _, pos in ipairs(trees) do
+		core.place_schematic_on_vmanip(vm, pos, schematics.tree)
+	end
 	vm:calc_lighting()
 	vm:update_liquids()
 end)
