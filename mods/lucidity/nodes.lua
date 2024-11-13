@@ -57,11 +57,6 @@ core.register_node("lucidity:iron_ore", {
 	tiles = {"lucidity_iron_ore.png"},
 	groups = {cracky = 2 },
 })
-core.register_node("lucidity:diamond_ore",{
-	description = "Diamond ore",
-	tiles = {"lucidity_diamond_ore.png"},
-	groups = {cracky = 3},
-})
 core.register_node("lucidity:lucigin",{
 	description = "Lucigin",
 	tiles = {"lucidity_lucigin.png"},
@@ -102,7 +97,7 @@ core.register_node("lucidity:flowing_water", {
 })
 
 core.register_node("lucidity:wakestone", {
-	description = "wakestone",
+	description = "Wakestone",
 	tiles = {"lucidity_wakestone.png"},
 	groups = {cracky = 4},
 })
