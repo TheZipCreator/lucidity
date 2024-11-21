@@ -53,7 +53,7 @@ core.register_node("lucidity:sand", {
 	is_ground_content = true
 })
 core.register_node("lucidity:iron_ore", {
-	description = "Iron ore",
+	description = "Iron Ore",
 	tiles = {"lucidity_iron_ore.png"},
 	groups = {cracky = 2 },
 })
